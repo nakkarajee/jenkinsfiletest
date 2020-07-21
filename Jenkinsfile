@@ -34,7 +34,7 @@ pipeline {
         }
         stage('package') {
             steps{
-                sh label: '', script: 'mvn clean package -Dskiptests'
+                sh label: '', script: 'mvn clean package -DskipTests'
             }
         }
     }
